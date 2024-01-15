@@ -1,0 +1,83 @@
+/* YourComponent.css */
+.ethnicmaindiv {
+  display: flex;
+  width: 100vw;
+  height: 105vh;
+  margin: 10vh 0;
+  margin-bottom: 10vh;
+  flex-direction: row;
+}
+
+.ethnicimage {
+  display: flex;
+  width: 50vw;
+  flex: 6;
+
+}
+
+.ethnicimg3 {
+  width: 30.5vw;
+  height: 73vh;
+  position: relative;
+  margin-left: 6vw;
+}
+
+.ethnicimg4 {
+  width: 35vw;
+  height: 40vh;
+  position: relative;
+  left: -18vw;
+  top: 63vh;
+}
+
+.ethnictext {
+  width: 50vw;
+  flex: 4;
+  margin: auto 2vw;
+}
+
+.ethnictext1 {
+  font-size: 1.3em;
+  text-align: left;
+  margin-bottom: 5vh;
+
+}
+
+.ethnictext2 {
+  font-size: 3.5em;
+  text-align: left;
+}
+
+@media(max-width:667px) {
+  .ethnicmaindiv {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .ethnicimage {
+    width: 100vw;
+    display: flex;
+    margin-bottom: 30vh;
+  }
+
+.ethnicimg3 {
+  width: 60vw;
+  margin-left: 0;
+  
+}
+
+.ethnicimg4 {
+  width: 50vw;
+  position: relative;
+  left: -18vw;
+  top: 63vh;
+  
+}
+
+  .ethnictext {
+margin-top: 10vh;
+margin-left: 10vw;
+  }
+ 
+}

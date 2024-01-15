@@ -1,0 +1,183 @@
+/* Navbar.css */
+body {
+	margin: 0;
+	font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1;
+	top: 18vh;
+	width: 90vw;
+	margin: 0 auto;
+	border-top: 1px solid white;
+}
+
+.brand {
+	width: 115px;
+	position: absolute;
+	top: -15vh;
+	left: 40vw;
+}
+
+.call {
+	position: absolute;
+	top: -13vh;
+	right: 30vh;
+	font-size: 25px;
+	padding: 3px 9px 5px 9px;
+	border-radius: 50%;
+	background: #b59393f7;
+}
+
+.talk {
+	position: absolute;
+	top: -13vh;
+	right: 0vh;
+	font-size: 20px;
+	padding: 8px 30px;
+	background: #9ca176f7;
+}
+
+.arrow {
+	display: none;
+}
+
+.toggle-button {
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+	color: #fff;
+	cursor: pointer;
+	display: none;
+}
+
+.x {
+	cursor: pointer;
+	display: none;
+}
+
+
+.nav-links {
+	list-style-type: none;
+	display: flex;
+	font-size: 20px;
+}
+
+ul {
+	margin: 0 auto;
+
+}
+
+.nav-links li {
+	margin: 0 10px;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: #fff;
+	/* font-weight: normal; */
+
+}
+
+@media (min-width: 1250px) {
+	.call {
+		position: absolute;
+		top: -13vh;
+		right: 30vh;
+		font-size: 25px;
+		padding: 3px 9px 5px 9px;
+		border-radius: 50%;
+		background: #b59393f7;
+		display: none;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.toggle-button {
+		display: block;
+		position: absolute;
+		right: 0vw;
+		top: 14vh;
+	}
+
+	.navbar {
+		top: -10vh;
+	}
+
+	.brand {
+		display: flex;
+		position: absolute;
+		width: 150px;
+		left: 7vw;
+		top: 8vh;
+	}
+
+	.arrow {
+		display: inline-block;
+	}
+
+	.x {
+		top: 10vh;
+		right: 8vw;
+		position: absolute;
+		display: flex;
+		font-size: 6vw;
+	}
+
+	.xclose {
+		right: 7vw;
+		position: absolute;
+		display: flex;
+		font-size: 4vw;
+		opacity: 0.7;
+	}
+
+	.closeicon:hover 
+	{
+		animation: mymove 1s ;
+
+	}
+	.closeicon:mouseout
+	{
+		animation: mymove 1s ;
+	}
+
+	@keyframes mymove {
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+
+	.nav-links {
+		display: none;
+
+	}
+
+	.nav-links.open {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 8vh;
+		left: -4vw;
+		height: 100vh;
+		width: 100vw;
+		background-color: #333;
+		z-index: 1;
+		justify-content: space-between;
+		padding-bottom: 30vh;
+		padding-top: 20vh;
+		font-size: 25px;
+	}
+
+}
+
+@media (max-width: 368px) {
+	.xclose {
+		display: none;
+	}
+}

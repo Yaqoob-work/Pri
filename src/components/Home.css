@@ -1,0 +1,24 @@
+body{
+position: relative;
+overflow: hidden;
+}
+.slidetext:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+    border-left: 2px solid #000;
+    animation: animate 1s steps(12) infinite;
+    }
+    
+    @keyframes animate {
+        40%,60%{
+            left: 100%;
+        }
+        100%{
+            left: 0%;
+        }
+    }

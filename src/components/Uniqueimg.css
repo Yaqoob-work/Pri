@@ -1,0 +1,68 @@
+.uniqmaindiv {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin: 10vh 0;
+}
+
+.uniqimage {
+    flex: 6;
+}
+
+.uniqimg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.uniqtext {
+    flex: 4;
+    flex-direction: column;
+}
+
+.uniqtext p {
+    font-size: 22px;
+    text-align: start;
+    margin: 4vw;
+}
+
+.uniqtext div {
+    font-size: 4vw;
+    text-align: start;
+    margin: 4vw;
+    margin-bottom: 2em;
+
+}
+
+.uniqaboutbutton {
+    font-size: 2em;
+    text-align: start;
+    margin: 4vw;
+    display: flex;
+    text-decoration: none;
+    background: #f06f33;
+    width: 250px;
+    padding: 0 58px;
+    color: white;
+}
+
+@media (max-width:667px) {
+    .uniqmaindiv {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin-bottom: 20vh;
+    }
+    .uniqtext div {
+        font-size: 2.5em;
+        margin: 0vw 4vw 10vw 4vw;
+    }
+    .uniqtext p {
+        font-size: 22px;
+        margin: 4vw;
+    }
+    .uniqaboutbutton {
+        width: 200px;
+        padding: 0 28px;
+    }
+    
+}

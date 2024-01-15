@@ -1,0 +1,103 @@
+/* YourComponent.css */
+.formmaindiv {
+    display: inline-flex;
+    width: 100vw;
+}
+.formimage{
+    flex: 6;
+    display: flex;
+}
+.formimg{
+    width: 57vw;
+    height: 100vh;
+}
+.formtext{
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-left: 4vw;
+    flex-direction: column;
+}
+.formtext1{
+    font-size: 1.5em;
+    text-align: left;
+}
+.formtext2{
+
+    font-size: 4vw;
+    text-align: left;
+}
+
+.forminputs{
+    text-align: left;
+
+}
+.forminput
+{
+    width: 15vw;
+    padding: 20px;
+    margin: 1vw 2vw 1vw 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.messageforminput{
+    width: 32vw;
+    padding: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.formlink{
+    display: flex;
+    margin-top: 13vh;
+    font-size: 22px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 250px;
+    padding: 15px 63px;
+    background: #df7e06;
+    color: white;
+    text-decoration: none;
+}
+.formcopyright{
+    /* display: flex; */
+    color: white;
+    background: #000;
+    font-size: 1.5vw;
+    padding:  10px 0;
+    margin-top: -1vh;
+}
+
+@media(max-width:667px) {
+    .formmaindiv {
+        display: block;
+        margin-top: 70vh;
+    }
+    .formimg{
+        width: 100vw;
+        /* height: 100vh; */
+    }
+    .formtext{
+        margin-left: 6vw;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+    .formtext2{
+        font-size: 5vw;
+        margin-top: 3vw;
+    }
+    .forminput
+    {
+        display: block;
+        width: 85vw;
+    }
+    .formlink{
+        padding:10px 63px;
+        width: 250px;
+    }
+    .formcopyright{
+        color: white;
+        background: #000;
+        font-size: 4vw;
+    }
+    
+}
